@@ -2,13 +2,7 @@ body, html {
     margin: 0;
     font-family: Roboto,Helvetica Neue,Arial,sans-serif;
 }
-.container {
-    width: 100%;
-    display: block;
-}
-.all-button {
-    color: #4285f4;
-    border-bottom: 2px solid #4285f4;
+#mobile-buttons a {
     display: block;
     flex: 0 0 auto;
     font-size: 12px;
@@ -22,6 +16,14 @@ body, html {
     height: 46px;
     -webkit-box-flex: 0;
 }
+#mobile-buttons a.active {
+    color: #4285f4;
+    border-bottom: 2px solid #4285f4;
+}
+.container {
+    width: 100%;
+    display: block;
+}
 .header {
     display: flex;
     color: #70757a;
@@ -34,7 +36,7 @@ body, html {
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
-    .hamburger-icon {
+    .hamburger-icon, .all-button {
         display: none;
     }
 }
